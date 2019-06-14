@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
 import './App.css'
 
-const quizData = require('./quiz_data.json');
+let quizData = require('./quiz_data.json');
 
 class Quiz extends Component{
     //const [quiz_position, setQuiz_position] = useState(1);
     constructor(props){
-        super(props)
+        super(props);
+        this.state = {quiz_position: 1};
     }
 
     render(){
